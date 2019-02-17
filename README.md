@@ -20,6 +20,7 @@ Below are steps to opening a remote root shell.
 ### Common Errors
 * The logo of my Boxee doesn't change!
   * Make sure that the usb is plugged in, is named and formatted correctly, and has the file rootshell.sh on it.
+  * Make sure that your line endings are set to LF.
 
 * After running nc on my other device, it says "connection refused"!
   * Make sure you have allowed this in your firewall, and the IP is correct.
