@@ -15,7 +15,7 @@ Below are steps to opening a remote root shell.
 6. Exit out of the settings menu, no saving required. The logo should transition to red and back to green.
 7. Open a terminal session on any other device (running linux) and type in the following:
 > nc <BOXEE IP> 9999 -v
-8. You should get a message similar to "a connection to 192.168.0.0 has been established". You can do whatever you want here!
+8. You should get a message similar to "Connection to 192.168.0.0 9999 port [tcp/*] succeeded!". You can do whatever you want here!
 
 ### Common Errors
 * The logo of my Boxee doesn't change!
