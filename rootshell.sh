@@ -6,7 +6,7 @@
 # # # # # # # # # # #
 
 # fade the led to red
-for i in $(seq 0 5 100); do dtool 6 2 0 $(expr 100 - $i); dtool 6 1 0 $i; done
+dtool 6 2 0 0; dtool 6 1 0 100
 
 # create new nc session
 killall nc
@@ -15,4 +15,4 @@ killall nc
 sleep 2
 
 # fade the led back to green
-for i in $(seq 0 5 100); do dtool 6 2 0 $i; dtool 6 1 0 $(expr 100 - $i); done
+dtool 6 2 0 100; dtool 6 1 0 0
