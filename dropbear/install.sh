@@ -18,9 +18,10 @@ echo ""
 {
   echo "Creating directories.."
   mkdir /download/dropbear
+  echo "Moving Dropbear.."
+  [ ! -f dropbear ] && echo "ERROR: Dropbear does not exist!" && exit
+  mv dropbear /download/dropbear
   cd /download/dropbear
-  echo "Downloading Dropbear.."
-  curl https://github.com/djoamersfoort/boxee-hack/raw/master/dropbear/dropbear -o dropbear
   chmod +x dropbear
   echo "Creating executables.."
   echo "killall dropbear; ./dropbear -R -E -r /tmp/key1 -d /tmp/key2 -p 22" > dropbear.sh
