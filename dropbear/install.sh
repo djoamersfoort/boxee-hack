@@ -20,7 +20,7 @@ echo ""
   mkdir /download/dropbear
   cd /download/dropbear
   echo "Downloading Dropbear.."
-  wget https://github.com/djoamersfoort/boxee-hack/raw/master/dropbear/dropbear
+  curl https://github.com/djoamersfoort/boxee-hack/raw/master/dropbear/dropbear -o dropbear
   chmod +x dropbear
   echo "Creating executables.."
   echo "killall dropbear; ./dropbear -R -E -r /tmp/key1 -d /tmp/key2 -p 22" > dropbear.sh
