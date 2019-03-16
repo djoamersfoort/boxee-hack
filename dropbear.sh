@@ -19,7 +19,7 @@ dtool 6 1 0 100
 # copy boxee to tmp
 cp /media/BOXEE/dropbear/dropbear /tmp
 chmod +x /tmp/dropbear
-./tmp/dropbear -R -F -E -B -p 22
+./tmp/dropbear -R -E -B -p 22
 
 # change the logo to orange
 dtool 6 2 0 100
